@@ -11,7 +11,6 @@ resource "aws_kms_alias" "tfstate" {
 
 resource "aws_s3_bucket" "tfstate" {
   bucket = local.setting["s3_bucket"]
-  #checkov:skip=CKV_AWS_144
 }
 
 resource "aws_s3_bucket_acl" "tfstate" {
@@ -48,7 +47,6 @@ resource "aws_s3_bucket_versioning" "tfstate" {
 }
 
 resource "aws_dynamodb_table" "tfstate_lock" {
-  #checkov:skip=CKV_AWS_28
   name           = "terraform-tfstate-lock"
   read_capacity  = 1
   write_capacity = 1
