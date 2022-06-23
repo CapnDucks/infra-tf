@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "this" {
-  name                 = local.setting["ecs_cluster"]
+  name                 = local.setting["ecr_repo"]
   image_tag_mutability = "MUTABLE"
 
   encryption_configuration {

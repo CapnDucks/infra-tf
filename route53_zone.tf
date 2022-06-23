@@ -1,0 +1,24 @@
+locals {
+  zone_name = sort(keys(module.zones.route53_zone_zone_id))[0]
+}
+
+module "zones" {
+  source = "../modules/route53_zone"
+
+  zones = {
+    "jelliott.io" = {
+      comment = "jelliott (dot) io"
+      tags = {
+        Name = "jelliott.io"
+      }
+    }
+
+#    "capnduck.com" = {
+#      comment = "capnduck (dot) com"
+#      tags = {
+#        Name = "capnduck.com"
+#      }
+#    }
+
+  }
+}

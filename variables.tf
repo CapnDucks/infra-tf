@@ -1,6 +1,6 @@
 variable "corp_cidrs" {
   type    = list(any)
-  default = ["199.66.176.0/22"]
+  default = ["1.2.3.4/32"]
 }
 
 locals {
@@ -10,6 +10,7 @@ locals {
       app_env             = terraform.workspace
       domain_name         = "capnduck.com"
       ecs_cluster         = "default"
+      ecr_repo            = "capnduck"
       kms_key_alias       = "capnduck"
       name                = "infra"
       owner               = "capnduck"
