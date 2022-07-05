@@ -5,11 +5,24 @@ module "jelliott_records" {
 
   records = [
     {
-      name = "subsonic"
-      type = "CNAME"
-      ttl  = 5
+      allow_overwrite = true
+      name            = ""
+      type            = "NS"
+      ttl             = "172800"
       records = [
-        "subsonic.capnduck.com.",
+        "ns-8.awsdns-01.com.",
+        "ns-901.awsdns-48.net.",
+        "ns-1555.awsdns-02.co.uk.",
+        "ns-1201.awsdns-22.org."
+      ]
+    },
+    {
+      allow_overwrite = true
+      name            = "subsonic"
+      ttl             = "30"
+      type            = "CNAME"
+      records = [
+        "subsonic.capnduck.com."
       ]
     }
   ]
