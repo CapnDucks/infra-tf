@@ -11,14 +11,12 @@ module "zones" {
       tags = {
         Name = "jelliott.io"
       }
-    }
-
+    },
 #    "capnduck.com" = {
 #      comment = "capnduck (dot) com"
 #      tags = {
 #        Name = "capnduck.com"
 #      }
 #    }
-
   }
 }

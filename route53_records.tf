@@ -28,7 +28,7 @@ module "capnduck_records" {
       ttl  = 5
       records = [
         "subsonic.capnduck.com.",
-      ]
+     ]
     }
   ]
 }
