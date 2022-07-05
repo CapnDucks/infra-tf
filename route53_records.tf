@@ -28,7 +28,6 @@ module "jelliott_records" {
   ]
 }
 
-/*
 module "capnduck_records" {
   source = "../modules/route53_record"
 
@@ -36,13 +35,25 @@ module "capnduck_records" {
 
   records = [
     {
-      name = "subsonic"
-      type = "CNAME"
-      ttl  = 5
+      allow_overwrite = true
+      name            = "subsonic"
+      type            = "CNAME"
+      ttl             = "60"
       records = [
-        "subsonic.capnduck.com.",
-     ]
+        "capnduck.ddns.net.",
+      ]
+    },
+    {
+      allow_overwrite = true
+      name            = ""
+      type            = "NS"
+      ttl             = "172800"
+      records = [
+        "ns-372.awsdns-46.com.",
+        "ns-1897.awsdns-45.co.uk.",
+        "ns-1144.awsdns-15.org.",
+        "ns-934.awsdns-52.net."
+      ]
     }
   ]
 }
-*/
