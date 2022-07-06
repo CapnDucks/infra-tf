@@ -54,6 +54,92 @@ module "capnduck_records" {
         "ns-1144.awsdns-15.org.",
         "ns-934.awsdns-52.net."
       ]
-    }
+    },
+    {
+      allow_overwrite = true
+      name = "calendar"
+      type = "CNAME"
+      ttl  = "60"
+      records = [
+        "ghs.googlehosted.com.",
+      ]
+    },
+    {
+      allow_overwrite = true
+      name = "drive"
+      type = "CNAME"
+      ttl  = "60"
+      records = [
+        "ghs.googlehosted.com.",
+      ]
+    },
+    {
+      allow_overwrite = true
+      name = "groups"
+      type = "CNAME"
+      ttl  = "60"
+      records = [
+        "ghs.googlehosted.com.",
+      ]
+    },
+    {
+      allow_overwrite = true
+      name = "mail"
+      type = "CNAME"
+      ttl  = "60"
+      records = [
+        "ghs.googlehosted.com.",
+      ]
+    },
+    {
+      allow_overwrite = true
+      name = "sites"
+      type = "CNAME"
+      ttl  = "60"
+      records = [
+        "ghs.googlehosted.com.",
+      ]
+    },
+    {
+      allow_overwrite = true
+      name = "webmail"
+      type = "CNAME"
+      ttl  = "60"
+      records = [
+        "ghs.googlehosted.com.",
+      ]
+    },
+    {
+      allow_overwrite = true
+      name = "_c39759b1b4ce68a0a58295c7c4040ee4.www.capnduck.com"
+      type = "CNAME"
+      ttl  = "60"
+      records = [
+        "_c000c7a04ea6a0f94872207bb05b6db3.hkvuiqjoua.acm-validations.aws.",
+      ]
+    },
+    {
+      allow_overwrite = true
+      name = ""
+      type = "CAA"
+      ttl  = "60"
+      records = [
+        "0 issue \"letsencrypt.org\"",
+        "0 issue \"amazon.com\""
+      ]
+    },
+    {
+      allow_overwrite = true
+      name = ""
+      type = "MX"
+      ttl  = "86400"
+      records = [
+        "1 aspmx.l.google.com.",
+        "10 alt4.aspmx.l.google.com.",
+        "10 alt3.aspmx.l.google.com.",
+        "5 alt2.aspmx.l.google.com.",
+        "5 alt1.aspmx.l.google.com."
+      ]
+    },
   ]
 }
