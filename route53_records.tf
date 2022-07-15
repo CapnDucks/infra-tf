@@ -150,5 +150,24 @@ module "capnduck_records" {
         "5 alt1.aspmx.l.google.com."
       ]
     },
+    {
+      allow_overwrite = true
+      name = ""
+      type = "TXT"
+      ttl  = "3600"
+      records = [
+        "v=spf1 include:_spf.google.com ~all"
+      ]
+    },
+
+    {
+      allow_overwrite = true
+      name = "_dmarc"
+      type = "TXT"
+      ttl  = "3600"
+      records = [
+        "v=DMARC1; ruf=mailto:dmarc-reports@capnduck.com; rua=mailto:dmarc-reports@capnduck.com; p=quarantine"
+      ]
+    }
   ]
 }
