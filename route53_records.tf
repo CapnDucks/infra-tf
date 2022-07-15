@@ -120,15 +120,6 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
-      name = "_c39759b1b4ce68a0a58295c7c4040ee4.www.capnduck.com"
-      type = "CNAME"
-      ttl  = "60"
-      records = [
-        "_c000c7a04ea6a0f94872207bb05b6db3.hkvuiqjoua.acm-validations.aws.",
-      ]
-    },
-    {
-      allow_overwrite = true
       name = ""
       type = "CAA"
       ttl  = "60"
