@@ -22,7 +22,9 @@ module "acm" {
 
   subject_alternative_names = [
     "www.${local.domain_name}",
-    "*.${local.domain_name}"
+    "*.${local.domain_name}",
+    "plex.${local.domain_name}",
+    "subsonic.${local.domain_name}"
   ]
 
   wait_for_validation = true

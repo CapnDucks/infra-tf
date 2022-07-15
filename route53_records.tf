@@ -166,7 +166,7 @@ module "capnduck_records" {
       type = "TXT"
       ttl  = "3600"
       records = [
-        "v=DMARC1; ruf=mailto:dmarc-reports@capnduck.com; rua=mailto:dmarc-reports@capnduck.com; p=quarantine"
+        "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@capnduck.com; ruf=mailto:dmarc-reports@capnduck.com; fo=0; adkim=r; aspf=r; pct=100; rf=afrf; ri=86400"
       ]
     }
   ]
