@@ -54,6 +54,15 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
+      name            = "www"
+      type            = "CNAME"
+      ttl             = "60"
+      records = [
+        "capnduck.ddns.net.",
+      ]
+    },
+    {
+      allow_overwrite = true
       name            = ""
       type            = "NS"
       ttl             = "172800"
