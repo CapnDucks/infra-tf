@@ -6,6 +6,7 @@ on:
       - develop
       - 'release/**'
       - 'feature/**'
+  workflow_dispatch:
 
 jobs:
   terraform-validation:
