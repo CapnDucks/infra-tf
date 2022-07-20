@@ -1,0 +1,49 @@
+name: terraform validation
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+      - 'release/**'  
+  workflow_dispatch:
+
+jobs:
+  terraform-validation:
+    runs-on: [ ubuntu-latest ]
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+    - uses: actions/setup-terraform@main
+      with: 
+        terraform_wrapper: true
+        terraform_version: 1.1.9
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Terraform fmt
+      id: fmt
+      run: terraform fmt -diff
+
+    - name: Terraform Init
+      id: init
+      run: terraform init -backend=false
+      if: success() || failure() #https://github.community/t/continue-on-error-allow-failure-ui-indication/16773
+
+    - name: Terraform Validate
+      id: validate
+      run: terraform validate -no-color
+      if: success() || failure()
+
+    - name: Check for modified files
+      id: git-check
+      run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
+
+    - name: Terraform commit
+      if: steps.git-check.outputs.modified == 'true'
+      run: |
+        git config --global user.name 'terraform fmt'
+        git config --global user.email 'terraform-no-reply@git.capnduck.com'
+        git commit -am "Automated terraform fmt check"
+        git push
