@@ -3,7 +3,8 @@ locals {
 }
 
 module "zones" {
-  source = "../modules/route53_zone"
+  source = "git::https://github.com/CapnDucks/aws_route53_zone?ref=1.0.0"
+  #  source = "../modules/route53_zone"
 
   zones = {
     "jelliott.io" = {

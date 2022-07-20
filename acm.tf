@@ -15,7 +15,8 @@ resource "aws_route53_zone" "this" {
 }
 
 module "acm" {
-  source = "../modules/acm"
+  source = "git::https://github.com/CapnDucks/aws_acm?ref=1.0.0"
+  #  source = "../modules/acm"
 
   domain_name = local.domain_name
   zone_id     = coalescelist(data.aws_route53_zone.this.*.zone_id, aws_route53_zone.this.*.zone_id)[0]
