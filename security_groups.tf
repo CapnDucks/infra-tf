@@ -1,6 +1,6 @@
 module "all_from_home" {
   source = "git::https://github.com/CapnDucks/aws_security_group?ref=1.0.0"
-#  source = "../modules/sg"
+  #  source = "../modules/sg"
 
   tcp_ports           = "0"
   cidrs               = ["${chomp(data.http.myip.body)}/32"]
@@ -10,7 +10,7 @@ module "all_from_home" {
 
 module "http_https_eveywhere" {
   source = "git::https://github.com/CapnDucks/aws_security_group?ref=1.0.0"
-#  source = "../modules/sg"
+  #  source = "../modules/sg"
 
   tcp_ports           = "80,443"
   cidrs               = ["0.0.0.0/0"]

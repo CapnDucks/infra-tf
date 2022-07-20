@@ -1,6 +1,6 @@
 module "jelliott_records" {
   source = "git::https://github.com/CapnDucks/aws_route53_record?ref=1.0.0"
-#  source = "../modules/route53_record"
+  #  source = "../modules/route53_record"
 
   zone_name = "jelliott.io"
 
@@ -31,7 +31,7 @@ module "jelliott_records" {
 
 module "capnduck_records" {
   source = "git::https://github.com/CapnDucks/aws_route53_record?ref=1.0.0"
-#  source = "../modules/route53_record"
+  #  source = "../modules/route53_record"
 
   zone_name = "capnduck.com"
 
@@ -77,63 +77,63 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
-      name = "calendar"
-      type = "CNAME"
-      ttl  = "60"
+      name            = "calendar"
+      type            = "CNAME"
+      ttl             = "60"
       records = [
         "ghs.googlehosted.com.",
       ]
     },
     {
       allow_overwrite = true
-      name = "drive"
-      type = "CNAME"
-      ttl  = "60"
+      name            = "drive"
+      type            = "CNAME"
+      ttl             = "60"
       records = [
         "ghs.googlehosted.com.",
       ]
     },
     {
       allow_overwrite = true
-      name = "groups"
-      type = "CNAME"
-      ttl  = "60"
+      name            = "groups"
+      type            = "CNAME"
+      ttl             = "60"
       records = [
         "ghs.googlehosted.com.",
       ]
     },
     {
       allow_overwrite = true
-      name = "mail"
-      type = "CNAME"
-      ttl  = "60"
+      name            = "mail"
+      type            = "CNAME"
+      ttl             = "60"
       records = [
         "ghs.googlehosted.com.",
       ]
     },
     {
       allow_overwrite = true
-      name = "sites"
-      type = "CNAME"
-      ttl  = "60"
+      name            = "sites"
+      type            = "CNAME"
+      ttl             = "60"
       records = [
         "ghs.googlehosted.com.",
       ]
     },
     {
       allow_overwrite = true
-      name = "webmail"
-      type = "CNAME"
-      ttl  = "60"
+      name            = "webmail"
+      type            = "CNAME"
+      ttl             = "60"
       records = [
         "ghs.googlehosted.com.",
       ]
     },
     {
       allow_overwrite = true
-      name = ""
-      type = "CAA"
-      ttl  = "60"
+      name            = ""
+      type            = "CAA"
+      ttl             = "60"
       records = [
         "0 issue \"letsencrypt.org\"",
         "0 issue \"amazon.com\""
@@ -141,9 +141,9 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
-      name = ""
-      type = "MX"
-      ttl  = "86400"
+      name            = ""
+      type            = "MX"
+      ttl             = "86400"
       records = [
         "1 aspmx.l.google.com.",
         "10 alt4.aspmx.l.google.com.",
@@ -154,9 +154,9 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
-      name = ""
-      type = "TXT"
-      ttl  = "3600"
+      name            = ""
+      type            = "TXT"
+      ttl             = "3600"
       records = [
         "v=spf1 include:_spf.google.com ~all"
       ]
@@ -164,9 +164,9 @@ module "capnduck_records" {
 
     {
       allow_overwrite = true
-      name = "_dmarc"
-      type = "TXT"
-      ttl  = "3600"
+      name            = "_dmarc"
+      type            = "TXT"
+      ttl             = "3600"
       records = [
         "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@capnduck.com; ruf=mailto:dmarc-reports@capnduck.com; fo=0; adkim=r; aspf=r; pct=100; rf=afrf; ri=86400"
       ]
