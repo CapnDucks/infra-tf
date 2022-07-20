@@ -1,6 +1,7 @@
 output "myip" {
   description = "My IP for security groups"
-  value       = "${chomp(data.http.myip.body)}/32"
+  #value      = "${chomp(data.http.myip.body)}/32"
+  value       = join(",", data.dns_a_record_set.home.addrs)
 }
 
 output "aws_vpc_id" {
