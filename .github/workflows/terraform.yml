@@ -47,3 +47,4 @@ jobs:
         git config --global user.email 'terraform-no-reply@git.capnduck.com'
         git commit -am "Automated terraform fmt check"
         git push
+
