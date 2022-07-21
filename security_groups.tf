@@ -3,7 +3,7 @@ module "all_from_home" {
   #  source = "../modules/sg"
 
   tcp_ports           = "0"
-  cidrs               = ["${chomp(data.http.myip.body)}/32"]
+  cidrs               = ["${join(",", data.dns_a_record_set.home.addrs)}/32"]
   security_group_name = "all from home"
   vpc_id              = data.aws_vpc.this.id
 }
