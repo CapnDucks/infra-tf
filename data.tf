@@ -5,10 +5,6 @@ data "dns_a_record_set" "home" {
   host = "capnduck.ddns.net"
 }
 
-data "http" "myip" {
-  url = "http://ipv4.icanhazip.com"
-}
-
 data "aws_vpc" "this" {
   filter {
     name   = "tag:Name"
