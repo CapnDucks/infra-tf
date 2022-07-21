@@ -69,10 +69,10 @@ module "capnduck_records" {
       type            = "NS"
       ttl             = "172800"
       records = [
-        "ns-372.awsdns-46.com.",
-        "ns-1897.awsdns-45.co.uk.",
-        "ns-1144.awsdns-15.org.",
-        "ns-934.awsdns-52.net."
+        "ns-1962.awsdns-53.co.uk.",
+        "ns-110.awsdns-13.com.",
+        "ns-1017.awsdns-63.net.",
+        "ns-1388.awsdns-45.org."
       ]
     },
     {
