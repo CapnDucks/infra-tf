@@ -16,7 +16,7 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_acm"></a> [acm](#module\_acm) | git::https://github.com/CapnDucks/aws_acm | 1.0.1 |
+| <a name="module_acm"></a> [acm](#module\_acm) | git::https://github.com/CapnDucks/aws_acm | 1.0.0 |
 | <a name="module_all_from_home"></a> [all\_from\_home](#module\_all\_from\_home) | git::https://github.com/CapnDucks/aws_security_group | 1.0.0 |
 | <a name="module_capnduck_records"></a> [capnduck\_records](#module\_capnduck\_records) | git::https://github.com/CapnDucks/aws_route53_record | 1.0.0 |
 | <a name="module_ecs"></a> [ecs](#module\_ecs) | git::https://github.com/CapnDucks/aws_ecs | 1.0.0 |
