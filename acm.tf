@@ -17,17 +17,17 @@ resource "aws_route53_zone" "this" {
 module "acm" {
   source = "git::https://github.com/CapnDucks/aws_acm?ref=1.0.1"
   #  source = "../modules/acm"
+  providers = {
+    aws = aws.use1
+  }
 
   domain_name = local.domain_name
   zone_id     = coalescelist(data.aws_route53_zone.this.*.zone_id, aws_route53_zone.this.*.zone_id)[0]
 
   subject_alternative_names = [
-    "www.${local.domain_name}",
-    "*.${local.domain_name}",
     "plex.${local.domain_name}",
     "subsonic.${local.domain_name}"
   ]
 
-  wait_for_validation = true
-
+  wait_for_validation = false
 }

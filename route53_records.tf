@@ -47,24 +47,6 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
-      name            = "plex"
-      type            = "CNAME"
-      ttl             = "60"
-      records = [
-        "capnduck.ddns.net.",
-      ]
-    },
-    {
-      allow_overwrite = true
-      name            = "www"
-      type            = "CNAME"
-      ttl             = "60"
-      records = [
-        "capnduck.ddns.net.",
-      ]
-    },
-    {
-      allow_overwrite = true
       name            = ""
       type            = "NS"
       ttl             = "172800"
@@ -143,7 +125,7 @@ module "capnduck_records" {
       allow_overwrite = true
       name            = ""
       type            = "MX"
-      ttl             = "86400"
+      ttl             = "1209600"
       records = [
         "1 aspmx.l.google.com.",
         "10 alt4.aspmx.l.google.com.",
