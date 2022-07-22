@@ -43,3 +43,7 @@ output "route53_zone_name" {
   description = "Name of Route53 zone"
   value       = module.zones.route53_zone_name
 }
+
+output "acm_arn" {
+  value = module.acm.acm_certificate_arn
+}
