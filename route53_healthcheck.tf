@@ -1,6 +1,6 @@
 module "r53-hc" {
-  #source = "git::https://github.com/CapnDucks/route53_healthcheck.git?ref=1.0.0"
-  source = "../modules/route53_healthcheck"
+  source = "git::https://github.com/CapnDucks/aws_route53_healthcheck?ref=1.0.0"
+  #source = "../modules/route53_healthcheck"
 
   providers = {
     aws = aws.use1
