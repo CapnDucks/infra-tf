@@ -113,6 +113,15 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
+      name            = "jenkins"
+      type            = "A"
+      ttl             = "60"
+      records = [
+        "192.168.1.130",
+      ]
+    },
+    {
+      allow_overwrite = true
       name            = ""
       type            = "CAA"
       ttl             = "60"
