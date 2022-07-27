@@ -2,7 +2,7 @@ module "all_from_home" {
   source = "git::https://github.com/CapnDucks/aws_security_group?ref=1.0.0"
   #  source = "../modules/sg"
 
-  tcp_ports           = "0"
+  tcp_ports           = "22,3306,5432"
   cidrs               = ["${join(",", data.dns_a_record_set.home.addrs)}/32"]
   security_group_name = "all from home"
   vpc_id              = data.aws_vpc.this.id
