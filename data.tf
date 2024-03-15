@@ -1,5 +1,4 @@
-data "aws_caller_identity" "this" {
-}
+data "aws_caller_identity" "this" {}
 
 data "dns_a_record_set" "home" {
   host = "capnduck.ddns.net"
