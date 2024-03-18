@@ -47,6 +47,15 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
+      name            = "speedtest"
+      type            = "CNAME"
+      ttl             = "60"
+      records = [
+        "capnduck.ddns.net.",
+      ]
+    },
+    {
+      allow_overwrite = true
       name            = ""
       type            = "NS"
       ttl             = "172800"
