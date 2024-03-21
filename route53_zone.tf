@@ -22,9 +22,9 @@ import {
 }
 
 resource "aws_route53_zone" "capnduck_com" {
-  comment           = "Managed by Terraform"
-  force_destroy     = true
-  name              = local.setting["domain_name"]
+  comment       = "Managed by Terraform"
+  force_destroy = true
+  name          = local.setting["domain_name"]
 
   tags = {
     Name = local.setting["domain_name"]
