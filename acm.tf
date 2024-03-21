@@ -20,7 +20,7 @@ module "acm" {
   }
 
   domain_name = local.domain_name
-  zone_id     = coalescelist(data.aws_route53_zone.this.*.zone_id, aws_route53_zone.this.*.zone_id)[0]
+  zone_id     = coalescelist(data.aws_route53_zone.this[*].zone_id, aws_route53_zone.this[*].zone_id)[0]
 
   subject_alternative_names = [
     "www.${local.domain_name}"
