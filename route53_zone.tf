@@ -1,5 +1,4 @@
 locals {
-  zone_name = sort(keys(module.zones.route53_zone_zone_id))[0]
 }
 
 module "zones" {
