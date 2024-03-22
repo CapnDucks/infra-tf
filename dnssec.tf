@@ -2,6 +2,7 @@ resource "aws_kms_key" "capnduck_com" {
   provider = aws.use1
 
   customer_master_key_spec = "ECC_NIST_P256"
+  description              = "Key for ${local.setting["domain_name"]}"
   deletion_window_in_days  = 7
   key_usage                = "SIGN_VERIFY"
   policy = jsonencode({
