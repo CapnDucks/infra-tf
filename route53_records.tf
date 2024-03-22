@@ -38,6 +38,15 @@ module "capnduck_records" {
   records = [
     {
       allow_overwrite = true
+      name            = "@"
+      type            = "DS"
+      ttl             = "300"
+      records = [
+        aws_route53_key_signing_key.capnduck_com.ds_record
+      ]
+    },
+    {
+      allow_overwrite = true
       name            = "subsonic"
       type            = "CNAME"
       ttl             = "60"
