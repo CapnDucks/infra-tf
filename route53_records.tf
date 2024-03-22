@@ -42,7 +42,7 @@ module "capnduck_records" {
       type            = "DS"
       ttl             = "30"
       records = [
-       aws_route53_key_signing_key.capnduck_com.ds_record,
+        aws_route53_key_signing_key.capnduck_com.ds_record,
       ]
     },
     {
