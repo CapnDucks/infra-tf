@@ -47,3 +47,7 @@ output "route53_zone_name" {
 output "acm_arn" {
   value = module.acm.acm_certificate_arn
 }
+
+output "ds" {
+  value = aws_route53_key_signing_key.capnduck_com.ds_record
+}
