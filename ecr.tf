@@ -1,6 +1,6 @@
 resource "aws_ecr_repository" "this" {
   name                 = local.setting["ecr_repo"]
-  image_tag_mutability = "MUTABLE"
+  image_tag_mutability = "IMMUTABLE"
 
   encryption_configuration {
     encryption_type = "KMS"
