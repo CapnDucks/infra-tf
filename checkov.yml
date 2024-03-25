@@ -1,0 +1,6 @@
+# Configuration
+framework: terraform
+compact: true
+
+# Checks
+skip-check:
