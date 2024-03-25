@@ -12,7 +12,8 @@ locals {
       domain_name             = "capnduck.com."
       ecs_cluster             = "default"
       ecr_repo                = "capnduck"
-      kms_key_alias           = "capnduck"
+      kms_ds_key              = "capnduck-ds-key"
+      kms_ecs_key             = "capnduck-ecs-key"
       map_public_ip_on_launch = true
       name                    = "infra"
       owner                   = "capnduck"
