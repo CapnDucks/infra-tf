@@ -1,0 +1,30 @@
+name: tf-lint
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+jobs:
+  tflint:
+    runs-on: [ ubuntu-latest ]
+
+    steps:
+    - uses: actions/checkout@v4
+      name: Checkout source code
+
+    - uses: terraform-linters/setup-tflint@v4
+      name: Setup TFLint
+      with:
+        tflint_version: v0.50.3
+
+    - name: Show version
+      run: tflint --version
+
+    - name: Init TFLint
+      run: tflint --init
+
+    - name: Run TFLint
+      run: tflint -f compact
