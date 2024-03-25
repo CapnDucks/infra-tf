@@ -35,6 +35,18 @@ jobs:
         id: fmt
         run: terraform fmt -check
 
+      - name: Check for modified files
+        id: git-check
+        run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)"   ]; then echo "true"; else echo "false"; fi)
+
+      - name: Terraform commit
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'Terraform Format'
+          git config --global user.email 'no-reply@git.capnduck.com'
+          git commit -am "Automated TF format check."
+          git push
+
       - name: Terraform Init
         id: init
         run: terraform init -backend-config="access_key=${{ secrets.AWS_ACCESS_KEY }}" -backend-config="secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY}}"
@@ -46,18 +58,6 @@ jobs:
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
-
-      - name: Check for modified files
-        id: git-check
-        run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)"  ]; then echo "true"; else echo "false"; fi)
-
-      - name: Terraform commit
-        if: steps.git-check.outputs.modified == 'true'
-        run: |
-          git config --global user.name 'Terraform Format'
-          git config --global user.email 'no-reply@git.capnduck.com'
-          git commit -am "Automated TF format check."
-          git push
 
       - name: Terraform Plan
         id: plan
