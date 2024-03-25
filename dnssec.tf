@@ -48,6 +48,13 @@ resource "aws_kms_key" "capnduck_com" {
   })
 }
 
+resource "aws_kms_alias" "capnduck_com" {
+  provider = aws.use1
+
+  name          = "alias/${local.setting["kms_ds_key"]}"
+  target_key_id = aws_kms_key.capnduck_com.key_id
+}
+
 resource "aws_route53_key_signing_key" "capnduck_com" {
   name                       = local.setting["domain_name"]
   hosted_zone_id             = data.aws_route53_zone.this[0].id
