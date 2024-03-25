@@ -47,6 +47,18 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
+      - name: Check for modified files
+        id: git-check
+        run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)"  ]; then echo "true"; else echo "false"; fi)
+
+      - name: Terraform commit
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'Terraform Format'
+          git config --global user.email 'no-reply@git.capnduck.com'
+          git commit -am "Automated TF format check."
+          git push
+
       - name: Terraform Plan
         id: plan
         if: github.event_name == 'pull_request'
@@ -81,17 +93,7 @@ jobs:
               repo: context.repo.repo,
               body: output
             })
-      - name: Check for modified files
-        id: git-check
-        run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
 
-      - name: Terraform commit
-        if: steps.git-check.outputs.modified == 'true'
-        run: |
-          git config --global user.name 'Terraform Format'
-          git config --global user.email 'no-reply@git.capnduck.com'
-          git commit -am "Automated TF format check."
-          git push
       - name: Terraform Plan Status
         if: steps.plan.outcome == 'failure'
         run: exit 1
