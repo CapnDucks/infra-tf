@@ -1,10 +1,12 @@
 resource "aws_s3_bucket" "tfstate" {
   bucket = local.setting["s3_bucket"]
+
 }
 
 resource "aws_s3_bucket_acl" "tfstate" {
   bucket = aws_s3_bucket.tfstate.id
   acl    = local.setting["s3_bucket_acl"]
+
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "tfstate" {
@@ -33,14 +35,11 @@ resource "aws_s3_bucket_versioning" "tfstate" {
   }
 }
 
-resource "aws_dynamodb_table" "tfstate_lock" {
-  name           = "terraform-tfstate-lock"
-  read_capacity  = 1
-  write_capacity = 1
-  hash_key       = "LockID"
+resource "aws_kms_key" "tfstate" {
+  deletion_window_in_days = 7
+}
 
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
+resource "aws_kms_alias" "tfstate" {
+  name          = "alias/${local.setting["kms_tfstate_key"]}"
+  target_key_id = aws_kms_key.tfstate.id
 }
