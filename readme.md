@@ -42,7 +42,9 @@
 | [aws_iam_service_linked_role.spot](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/iam_service_linked_role) | resource |
 | [aws_key_pair.this](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/key_pair) | resource |
 | [aws_kms_alias.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_alias) | resource |
+| [aws_kms_alias.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_alias) | resource |
 | [aws_kms_key.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_key) | resource |
+| [aws_kms_key.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_key) | resource |
 | [aws_route53_hosted_zone_dnssec.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53_hosted_zone_dnssec) | resource |
 | [aws_route53_key_signing_key.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53_key_signing_key) | resource |
 | [aws_route53_zone.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53_zone) | resource |
