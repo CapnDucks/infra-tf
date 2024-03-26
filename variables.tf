@@ -14,6 +14,7 @@ locals {
       ecr_repo                = "capnduck"
       kms_ds_key              = "capnduck-ds-key"
       kms_ecs_key             = "capnduck-ecs-key"
+      kms_tfstate_key         = "tfstate"
       map_public_ip_on_launch = true
       name                    = "infra"
       owner                   = "capnduck"
