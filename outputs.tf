@@ -48,6 +48,6 @@ output "acm_arn" {
   value = module.acm.acm_certificate_arn
 }
 
-output "ds" {
+output "ds_record" {
   value = aws_route53_key_signing_key.capnduck_com.ds_record
 }
