@@ -76,7 +76,7 @@ No inputs.
 | <a name="output_acm_arn"></a> [acm\_arn](#output\_acm\_arn) | n/a |
 | <a name="output_aws_vpc_id"></a> [aws\_vpc\_id](#output\_aws\_vpc\_id) | n/a |
 | <a name="output_distinct_domain_names"></a> [distinct\_domain\_names](#output\_distinct\_domain\_names) | List of distinct domains names used for the validation. |
-| <a name="output_ds"></a> [ds](#output\_ds) | n/a |
+| <a name="output_ds_record"></a> [ds\_record](#output\_ds\_record) | n/a |
 | <a name="output_myip"></a> [myip](#output\_myip) | My IP for security groups |
 | <a name="output_private"></a> [private](#output\_private) | n/a |
 | <a name="output_public"></a> [public](#output\_public) | n/a |
