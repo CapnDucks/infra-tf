@@ -8,6 +8,7 @@
 | <a name="requirement_dns"></a> [dns](#requirement\_dns) | = 3.4.0 |
 | <a name="requirement_external"></a> [external](#requirement\_external) | = 2.3.3 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | = 3.2.2 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | = 3.6.0 |
 | <a name="requirement_tls"></a> [tls](#requirement\_tls) | = 4.0.5 |
 
 ## Providers
