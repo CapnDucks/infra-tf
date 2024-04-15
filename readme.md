@@ -6,6 +6,7 @@
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.7.5 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | = 5.41.0 |
 | <a name="requirement_dns"></a> [dns](#requirement\_dns) | = 3.4.0 |
+| <a name="requirement_external"></a> [external](#requirement\_external) | = 2.3.3 |
 | <a name="requirement_tls"></a> [tls](#requirement\_tls) | = 4.0.5 |
 
 ## Providers
