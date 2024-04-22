@@ -18,7 +18,6 @@
 | <a name="provider_aws"></a> [aws](#provider\_aws) | 5.41.0 |
 | <a name="provider_aws.use1"></a> [aws.use1](#provider\_aws.use1) | 5.41.0 |
 | <a name="provider_dns"></a> [dns](#provider\_dns) | 3.4.0 |
-| <a name="provider_tls"></a> [tls](#provider\_tls) | 4.0.5 |
 
 ## Modules
 
@@ -43,7 +42,6 @@
 | [aws_ecr_lifecycle_policy.this](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/ecr_lifecycle_policy) | resource |
 | [aws_ecr_repository.this](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/ecr_repository) | resource |
 | [aws_iam_service_linked_role.spot](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/iam_service_linked_role) | resource |
-| [aws_key_pair.this](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/key_pair) | resource |
 | [aws_kms_alias.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_alias) | resource |
 | [aws_kms_alias.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_alias) | resource |
 | [aws_kms_key.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_key) | resource |
@@ -57,9 +55,6 @@
 | [aws_s3_bucket_public_access_block.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/s3_bucket_public_access_block) | resource |
 | [aws_s3_bucket_server_side_encryption_configuration.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/s3_bucket_server_side_encryption_configuration) | resource |
 | [aws_s3_bucket_versioning.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/s3_bucket_versioning) | resource |
-| [aws_secretsmanager_secret.this](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/secretsmanager_secret) | resource |
-| [aws_secretsmanager_secret_version.this](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/secretsmanager_secret_version) | resource |
-| [tls_private_key.this](https://registry.terraform.io/providers/hashicorp/tls/4.0.5/docs/resources/private_key) | resource |
 | [aws_caller_identity.this](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/caller_identity) | data source |
 | [aws_route53_zone.this](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/route53_zone) | data source |
 | [aws_subnets.private](https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/subnets) | data source |
