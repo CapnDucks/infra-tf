@@ -1,7 +1,5 @@
 locals {
-  # Use existing (via data source) or create new zone (will fail validation, if zone is not reachable)
   use_existing_route53_zone = true
-  # Removing trailing dot from domain
   domain_name = trimsuffix(local.domain, ".")
   domain      = local.setting["domain_name"]
 }

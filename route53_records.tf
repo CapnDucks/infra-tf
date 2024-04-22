@@ -1,6 +1,5 @@
 module "jelliott_records" {
   source = "git::https://github.com/CapnDucks/aws_route53_record?ref=1.0.0"
-  #  source = "../modules/route53_record"
 
   zone_name = "jelliott.io"
 
@@ -31,7 +30,6 @@ module "jelliott_records" {
 
 module "capnduck_records" {
   source = "git::https://github.com/CapnDucks/aws_route53_record?ref=1.0.0"
-  #  source = "../modules/route53_record"
 
   zone_name = "capnduck.com"
 

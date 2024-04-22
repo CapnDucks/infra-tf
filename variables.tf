@@ -1,9 +1,3 @@
-#variable "corp_cidrs" {
-#  description = "CIDR blocks from HQ"
-#  type    = list(any)
-#  default = ["1.2.3.4/32", "1.2.4.4/32"]
-#}
-
 locals {
   settings = {
     default = {

@@ -28,7 +28,6 @@ output "account_id" {
   value = data.aws_caller_identity.this.id
 }
 
-# zones
 output "route53_zone_zone_id" {
   description = "Zone ID of Route53 zone"
   value       = module.zones.route53_zone_zone_id
