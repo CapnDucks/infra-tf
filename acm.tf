@@ -1,7 +1,7 @@
 locals {
   use_existing_route53_zone = true
-  domain_name = trimsuffix(local.domain, ".")
-  domain      = local.setting["domain_name"]
+  domain_name               = trimsuffix(local.domain, ".")
+  domain                    = local.setting["domain_name"]
 }
 
 resource "aws_route53_zone" "this" {
