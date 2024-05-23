@@ -9,6 +9,9 @@ on:
       - '**'
   workflow_dispatch:
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+
 jobs:
   terraform:
     name: "Terraform Workflow"
@@ -26,7 +29,7 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_wrapper: true
-          terraform_version: 1.7.5
+          terraform_version: 1.8.3
       - uses: actions/setup-node@v4
         with:
           node-version: '20'

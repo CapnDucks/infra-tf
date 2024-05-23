@@ -5,6 +5,9 @@ on:
       - '**'
   workflow_dispatch:
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+
 jobs:
   terraform-docs:
     runs-on: [ ubuntu-latest ]
