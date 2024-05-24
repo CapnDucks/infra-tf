@@ -12,6 +12,7 @@ resource "aws_route53_zone" "this" {
 
 module "acm" {
   source = "git::https://github.com/CapnDucks/aws_acm?ref=1.latest"
+    #checkov:skip=CKV_TF_2:"Ensure Terraform module sources use a tag with a version number"
 
   providers = {
     aws = aws.use1
