@@ -11,7 +11,7 @@ resource "aws_s3_bucket_acl" "tfstate" {
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "tfstate" {
   bucket = aws_s3_bucket.tfstate.bucket
-    #checkov:skip=CKV_AWS_67:"Ensure AWS S3 bucket encrypted with Customer Managed Key (CMK) has regular rotation"
+    #checkov:skip=CKV2_AWS_67:"Ensure AWS S3 bucket encrypted with Customer Managed Key (CMK) has regular rotation"
 
   rule {
     apply_server_side_encryption_by_default {
