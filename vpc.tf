@@ -1,7 +1,7 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.0"
-    #checkov:skip=CKV_TF_2:"Ensure Terraform module sources use a tag with a version number"
+  #checkov:skip=CKV_TF_2:"Ensure Terraform module sources use a tag with a version number"
 
   name                    = local.setting["vpc_name"]
   cidr                    = local.setting["vpc_cidr"]
