@@ -1,4 +1,3 @@
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
@@ -70,16 +69,15 @@ No inputs.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_account_id"></a> [account\_id](#output\_account\_id) | n/a |
-| <a name="output_acm_arn"></a> [acm\_arn](#output\_acm\_arn) | n/a |
-| <a name="output_aws_vpc_id"></a> [aws\_vpc\_id](#output\_aws\_vpc\_id) | n/a |
+| <a name="output_account_id"></a> [account\_id](#output\_account\_id) | AWS account ID. |
+| <a name="output_acm_arn"></a> [acm\_arn](#output\_acm\_arn) | ARN of the ACM cert. |
+| <a name="output_aws_vpc_id"></a> [aws\_vpc\_id](#output\_aws\_vpc\_id) | VPC id. |
 | <a name="output_distinct_domain_names"></a> [distinct\_domain\_names](#output\_distinct\_domain\_names) | List of distinct domains names used for the validation. |
-| <a name="output_ds"></a> [ds](#output\_ds) | n/a |
-| <a name="output_myip"></a> [myip](#output\_myip) | My IP for security groups |
-| <a name="output_private"></a> [private](#output\_private) | n/a |
-| <a name="output_public"></a> [public](#output\_public) | n/a |
-| <a name="output_route53_zone"></a> [route53\_zone](#output\_route53\_zone) | n/a |
-| <a name="output_route53_zone_name"></a> [route53\_zone\_name](#output\_route53\_zone\_name) | Name of Route53 zone |
+| <a name="output_ds"></a> [ds](#output\_ds) | Route53 DS info. |
+| <a name="output_myip"></a> [myip](#output\_myip) | My IP for security groups. |
+| <a name="output_private"></a> [private](#output\_private) | Private subnet id's. |
+| <a name="output_public"></a> [public](#output\_public) | Public subnet id's. |
+| <a name="output_route53_zone"></a> [route53\_zone](#output\_route53\_zone) | Route53 zone. |
+| <a name="output_route53_zone_name"></a> [route53\_zone\_name](#output\_route53\_zone\_name) | Name of Route53 zone. |
 | <a name="output_route53_zone_name_servers"></a> [route53\_zone\_name\_servers](#output\_route53\_zone\_name\_servers) | Name servers of Route53 zone |
 | <a name="output_route53_zone_zone_id"></a> [route53\_zone\_zone\_id](#output\_route53\_zone\_zone\_id) | Zone ID of Route53 zone |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
