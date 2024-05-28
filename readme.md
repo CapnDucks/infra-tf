@@ -87,7 +87,7 @@ No inputs.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.8.3 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.8.4 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
 | <a name="requirement_dns"></a> [dns](#requirement\_dns) | ~> 3.0 |
 | <a name="requirement_external"></a> [external](#requirement\_external) | ~> 2.0 |
@@ -99,8 +99,8 @@ No inputs.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.50.0 |
-| <a name="provider_aws.use1"></a> [aws.use1](#provider\_aws.use1) | 5.50.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.51.1 |
+| <a name="provider_aws.use1"></a> [aws.use1](#provider\_aws.use1) | 5.51.1 |
 | <a name="provider_dns"></a> [dns](#provider\_dns) | 3.4.1 |
 
 ## Modules
