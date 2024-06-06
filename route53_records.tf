@@ -159,7 +159,6 @@ module "capnduck_records" {
         "v=spf1 include:_spf.google.com ~all"
       ]
     },
-
     {
       allow_overwrite = true
       name            = "_dmarc"
@@ -168,6 +167,16 @@ module "capnduck_records" {
       records = [
         "v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@capnduck.com; ruf=mailto:dmarc-reports@capnduck.com; fo=0; adkim=r; aspf=r; pct=100; rf=afrf; ri=86400"
       ]
+    },
+    {
+      allow_overwrite = true
+      name            = "google._domainkey"
+      type            = "TXT"
+      ttl             = "3600"
+      records = [
+        "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAntC4Qc+uIFILOKcz3V4efoztmH4BddVHeeapgNf0xlvnNjeAHYzkQWg0w9vBRgWM0uuRljRr0Yah+M+wGZdwONv6hC72FmVWiVH/yeEcsT8zVXuLJtdsb0JEypd5nBjfjr+TobJTc5GM9VtGD/PaMePQC3ubzXMyqRXPhTl6MfWC/eClGUlVvZ+ffKKKJ8Ie0ZXsUp9yYbWJLh2coJs4GI284CmyTWN6yWo20EFbpweoSSupAWAhdXFb7M/wsPbpOzcWyYZomNTFMl8BmuRRcMeVF2xR4NPg6/mbADoSzjACsp+kI7UCg/k/IX6/tj0NLwGwaoVXCH8JP+jP1nTZFwIDAQAB"
+      ]
     }
+
   ]
 }
