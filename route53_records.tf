@@ -174,7 +174,7 @@ module "capnduck_records" {
       type            = "TXT"
       ttl             = "3600"
       records = [
-        "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAntC4Qc+uIFILOKcz3V4efoztmH4BddVHeeapgNf0xlvnNjeAHYzkQWg0w9vBRgWM0uuRljRr0Yah+M+wGZdwONv6hC72FmVWiVH/yeEcsT8zVXuLJtdsb0JEypd5nBjfjr+TobJTc5GM9VtGD/PaMePQC3ubzXMyqRXPhTl6MfWC/eClGUlVvZ+ffKKKJ8Ie0ZXsUp9yYbWJLh2coJs4GI284CmyTWN6yWo20EFbpweoSSupAWAhdXFb7M/wsPbpOzcWyYZomNTFMl8BmuRRcMeVF2xR4NPg6/mbADoSzjACsp+kI7UCg/k/IX6/tj0NLwGwaoVXCH8JP+jP1nTZFwIDAQAB"
+        "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAntC4Qc+uIFILOKcz3V4efoztmH4BddVHeeapgNf0xlvnNjeAHYzkQWg0w9vBRgWM0uuRljRr0Yah+M+wGZdwONv6hC72FmVWiVH/yeEcsT8zVXuLJtdsb0JEypd5nBjfjr+TobJTc5GM9VtGD/PaMePQC3ubzXMyqRXPhTl6MfWC/eClGUlVvZ+ffKKKJ8Ie0\"\"ZXsUp9yYbWJLh2coJs4GI284CmyTWN6yWo20EFbpweoSSupAWAhdXFb7M/wsPbpOzcWyYZomNTFMl8BmuRRcMeVF2xR4NPg6/mbADoSzjACsp+kI7UCg/k/IX6/tj0NLwGwaoVXCH8JP+jP1nTZFwIDAQAB"
       ]
     }
 
