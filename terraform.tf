@@ -1,5 +1,5 @@
 terraform {
-  required_version = "= 1.8.5"
+  required_version = "= 1.9.3"
   backend "s3" {
     bucket         = "capnduck-terraform-tfstate"
     key            = "terraform.tfstate"
@@ -11,7 +11,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.55.0"
+      version = "5.60.0"
     }
     dns = {
       source  = "hashicorp/dns"
