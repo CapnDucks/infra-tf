@@ -87,7 +87,7 @@ No inputs.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.9.3 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.9.5 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | 5.60.0 |
 | <a name="requirement_dns"></a> [dns](#requirement\_dns) | 3.4.1 |
 | <a name="requirement_external"></a> [external](#requirement\_external) | 2.3.3 |
