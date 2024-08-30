@@ -120,15 +120,6 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
-      name            = "webmail"
-      type            = "CNAME"
-      ttl             = "60"
-      records = [
-        "ghs.googlehosted.com.",
-      ]
-    },
-    {
-      allow_overwrite = true
       name            = ""
       type            = "CAA"
       ttl             = "60"
