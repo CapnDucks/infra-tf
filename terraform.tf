@@ -11,27 +11,27 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.65.0"
+      version = "5.67.0"
     }
     dns = {
       source  = "hashicorp/dns"
-      version = "3.4.1"
+      version = "3.4.2"
     }
     tls = {
       source  = "hashicorp/tls"
-      version = "4.0.5"
+      version = "4.0.6"
     }
     external = {
       source  = "hashicorp/external"
-      version = "2.3.3"
+      version = ">= 2.3.4"
     }
     null = {
       source  = "hashicorp/null"
-      version = "3.2.2"
+      version = ">= 3.2.3"
     }
     random = {
       source  = "hashicorp/random"
-      version = "3.6.2"
+      version = ">= 3.6.3"
     }
   }
 }
