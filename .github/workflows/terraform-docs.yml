@@ -24,6 +24,6 @@ jobs:
       with:
         working-dir: .
         output-file: readme.md
-        output-method: inject
+        output-method: replace
         git-push: "true"
         template: "<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->\n{{ .Content }}\n<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->"
