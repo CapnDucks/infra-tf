@@ -1,5 +1,6 @@
 terraform {
   required_version = "1.10.5"
+  required_version = "1.10.4"
   backend "s3" {
     bucket         = "capnduck-terraform-tfstate"
     key            = "terraform.tfstate"
