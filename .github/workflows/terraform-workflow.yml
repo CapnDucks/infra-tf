@@ -15,7 +15,7 @@ env:
 jobs:
   terraform:
     name: "Terraform Workflow"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -29,10 +29,10 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_wrapper: true
-          terraform_version: 1.10.4
+          terraform_version: 1.10.5
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Terraform Format
         id: fmt
