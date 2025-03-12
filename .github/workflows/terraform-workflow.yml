@@ -21,16 +21,16 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd719 # 4.2.2
         with:
           ref: ${{ github.head_ref }}
 
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
+        uses: hashicorp/setup-terraform@b9cd54a # 3.1.2
         with:
           terraform_wrapper: true
           terraform_version: 1.11.2
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@1d0ff46 # 4.2.0
         with:
           node-version: '22'
 
@@ -64,7 +64,7 @@ jobs:
         run: terraform plan -no-color -input=false -out=plan.out
         continue-on-error: true
 
-      - uses: actions/github-script@v7
+      - uses: actions/github-script@60a0d83 # 7.0.1
         if: github.event_name == 'pull_request'
         env:
           PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
