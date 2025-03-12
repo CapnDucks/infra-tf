@@ -14,13 +14,13 @@ env:
 
 jobs:
   checkov-job:
-    runs-on: [ ubuntu-22.04 ]
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd719 # 4.2.2
 
       - name: Test with Checkov
         id: checkov
-        uses: bridgecrewio/checkov-action@v12
+        uses: bridgecrewio/checkov-action@5b9a80d # v12.2968.0
         with:
           directory: /
           framework: terraform 
