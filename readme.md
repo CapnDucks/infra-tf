@@ -3,8 +3,8 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | 1.11.2 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 5.90.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | 1.11.4 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 5.94.1 |
 | <a name="requirement_dns"></a> [dns](#requirement\_dns) | 3.4.2 |
 | <a name="requirement_external"></a> [external](#requirement\_external) | 2.3.4 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | 3.2.3 |
@@ -15,8 +15,8 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.90.1 |
-| <a name="provider_aws.use1"></a> [aws.use1](#provider\_aws.use1) | 5.90.1 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.94.1 |
+| <a name="provider_aws.use1"></a> [aws.use1](#provider\_aws.use1) | 5.94.1 |
 | <a name="provider_dns"></a> [dns](#provider\_dns) | 3.4.2 |
 
 ## Modules
@@ -36,30 +36,30 @@
 
 | Name | Type |
 |------|------|
-| [aws_db_subnet_group.private](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/db_subnet_group) | resource |
-| [aws_db_subnet_group.public](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/db_subnet_group) | resource |
-| [aws_dynamodb_table.tfstate_lock](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/dynamodb_table) | resource |
-| [aws_ecr_lifecycle_policy.this](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/ecr_lifecycle_policy) | resource |
-| [aws_ecr_repository.this](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/ecr_repository) | resource |
-| [aws_iam_service_linked_role.spot](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/iam_service_linked_role) | resource |
-| [aws_kms_alias.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/kms_alias) | resource |
-| [aws_kms_alias.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/kms_alias) | resource |
-| [aws_kms_key.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/kms_key) | resource |
-| [aws_kms_key.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/kms_key) | resource |
-| [aws_route53_hosted_zone_dnssec.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_hosted_zone_dnssec) | resource |
-| [aws_route53_key_signing_key.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_key_signing_key) | resource |
-| [aws_route53_zone.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_zone) | resource |
-| [aws_route53_zone.this](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_zone) | resource |
-| [aws_s3_bucket.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/s3_bucket) | resource |
-| [aws_s3_bucket_acl.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/s3_bucket_acl) | resource |
-| [aws_s3_bucket_public_access_block.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/s3_bucket_public_access_block) | resource |
-| [aws_s3_bucket_server_side_encryption_configuration.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/s3_bucket_server_side_encryption_configuration) | resource |
-| [aws_s3_bucket_versioning.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/s3_bucket_versioning) | resource |
-| [aws_caller_identity.this](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/caller_identity) | data source |
-| [aws_route53_zone.this](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/route53_zone) | data source |
-| [aws_subnets.private](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/subnets) | data source |
-| [aws_subnets.public](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/subnets) | data source |
-| [aws_vpc.this](https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/vpc) | data source |
+| [aws_db_subnet_group.private](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/db_subnet_group) | resource |
+| [aws_db_subnet_group.public](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/db_subnet_group) | resource |
+| [aws_dynamodb_table.tfstate_lock](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/dynamodb_table) | resource |
+| [aws_ecr_lifecycle_policy.this](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/ecr_lifecycle_policy) | resource |
+| [aws_ecr_repository.this](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/ecr_repository) | resource |
+| [aws_iam_service_linked_role.spot](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/iam_service_linked_role) | resource |
+| [aws_kms_alias.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/kms_alias) | resource |
+| [aws_kms_alias.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/kms_alias) | resource |
+| [aws_kms_key.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/kms_key) | resource |
+| [aws_kms_key.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/kms_key) | resource |
+| [aws_route53_hosted_zone_dnssec.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/route53_hosted_zone_dnssec) | resource |
+| [aws_route53_key_signing_key.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/route53_key_signing_key) | resource |
+| [aws_route53_zone.capnduck_com](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/route53_zone) | resource |
+| [aws_route53_zone.this](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/route53_zone) | resource |
+| [aws_s3_bucket.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3_bucket) | resource |
+| [aws_s3_bucket_acl.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3_bucket_acl) | resource |
+| [aws_s3_bucket_public_access_block.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3_bucket_public_access_block) | resource |
+| [aws_s3_bucket_server_side_encryption_configuration.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3_bucket_server_side_encryption_configuration) | resource |
+| [aws_s3_bucket_versioning.tfstate](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3_bucket_versioning) | resource |
+| [aws_caller_identity.this](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/caller_identity) | data source |
+| [aws_route53_zone.this](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/route53_zone) | data source |
+| [aws_subnets.private](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/subnets) | data source |
+| [aws_subnets.public](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/subnets) | data source |
+| [aws_vpc.this](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/vpc) | data source |
 | [dns_a_record_set.home](https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/data-sources/a_record_set) | data source |
 
 ## Inputs
