@@ -1,11 +1,11 @@
 terraform {
   required_version = "1.11.4"
   backend "s3" {
-    bucket         = "capnduck-terraform-tfstate"
-    key            = "terraform.tfstate"
-    use_lockfile   = true
-    region         = "us-west-2"
-    encrypt        = true
+    bucket       = "capnduck-terraform-tfstate"
+    key          = "terraform.tfstate"
+    use_lockfile = true
+    region       = "us-west-2"
+    encrypt      = true
   }
 
   required_providers {
