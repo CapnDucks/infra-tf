@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     bucket         = "capnduck-terraform-tfstate"
     key            = "terraform.tfstate"
-    dynamodb_table = "terraform-tfstate-lock"
+    use_lockfile   = true
     region         = "us-west-2"
     encrypt        = true
   }
