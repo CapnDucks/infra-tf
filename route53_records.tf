@@ -79,7 +79,7 @@ module "capnduck_records" {
         "capnduck.ddns.net.",
       ]
     },
-        {
+    {
       allow_overwrite = true
       name            = "vault"
       type            = "CNAME"
