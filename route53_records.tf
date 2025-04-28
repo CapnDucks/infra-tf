@@ -88,7 +88,15 @@ module "capnduck_records" {
         "capnduck.ddns.net.",
       ]
     },
-
+    {
+      allow_overwrite = true
+      name            = "cloud"
+      type            = "CNAME"
+      ttl             = "60"
+      records = [
+        "capnduck.ddns.net.",
+      ]
+    },
     {
       allow_overwrite = true
       name            = ""
