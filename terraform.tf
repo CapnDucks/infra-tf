@@ -1,5 +1,5 @@
 terraform {
-  required_version = "1.11.4"
+  required_version = "1.12.0"
   backend "s3" {
     bucket       = "capnduck-terraform-tfstate"
     key          = "terraform.tfstate"
@@ -11,27 +11,27 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.94.1"
+      version = "5.97.0"
     }
     dns = {
       source  = "hashicorp/dns"
-      version = "3.4.2"
+      version = "3.4.3"
     }
     tls = {
       source  = "hashicorp/tls"
-      version = "4.0.6"
+      version = "4.1.0"
     }
     external = {
       source  = "hashicorp/external"
-      version = "2.3.4"
+      version = "2.3.5"
     }
     null = {
       source  = "hashicorp/null"
-      version = "3.2.3"
+      version = "3.2.4"
     }
     random = {
       source  = "hashicorp/random"
-      version = "3.6.3"
+      version = "3.7.2"
     }
   }
 }
