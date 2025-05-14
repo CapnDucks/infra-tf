@@ -40,7 +40,13 @@ jobs:
 
       - name: Check for modified files
         id: git-check
-        run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)"   ]; then echo "true"; else echo "false"; fi)
+        # run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)"   ]; then echo "true"; else echo "false"; fi)
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "modified=true" >> $GITHUB_OUTPUT
+          else
+            echo "modified=false" >> $GITHUB_OUTPUT
+          fi
 
       - name: Terraform commit
         if: steps.git-check.outputs.modified == 'true'
