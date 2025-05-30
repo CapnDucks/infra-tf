@@ -45,6 +45,15 @@ module "capnduck_records" {
     },
     {
       allow_overwrite = true
+      name            = "photos"
+      type            = "CNAME"
+      ttl             = "30"
+      records = [
+        "capnduck.ddns.net.", 
+      ]
+    },
+    {
+      allow_overwrite = true
       name            = "subsonic"
       type            = "CNAME"
       ttl             = "60"
