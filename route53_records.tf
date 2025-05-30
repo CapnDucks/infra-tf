@@ -49,7 +49,7 @@ module "capnduck_records" {
       type            = "CNAME"
       ttl             = "30"
       records = [
-        "capnduck.ddns.net.", 
+        "capnduck.ddns.net.",
       ]
     },
     {
